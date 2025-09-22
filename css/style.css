@@ -1,0 +1,79 @@
+body {
+  font-size: 0.7rem; /* default is 1rem (16px). 0.9rem ≈ 14.4px */
+}
+
+aside {
+  background: #3a6a97;
+}
+
+/*.main-content {
+  position: relative;
+  background: url("../computer.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 0 20px 20px 0; 
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); 
+  z-index: -1;
+}*/
+
+
+.profile-img-wrapper {
+  box-shadow: 0 -5px 30px rgba(245, 243, 243, 0.842);
+}
+
+.profile-img {
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-27px) translateX(2px) scale(1.4);
+}
+
+.profile-img:hover {
+  transform: translateY(-27px) scale(1.45);
+}
+
+/* Custom HR in sidebar */
+.custom-hr {
+  border: 0;
+  border-top: 2px solid #fff;
+  width: 50%;
+  margin: 1.5rem auto;
+  opacity: 0.7;
+}
+
+.pill-custom {
+ /* background-color: #3a6a97;*/
+  color: #3a6a97;
+  /*box-shadow: 0 4px 10px rgba(75, 139, 190, 0.986);*/
+}
+
+/* Section title strapline */
+.section-title {
+  position: relative;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
